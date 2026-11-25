@@ -1,0 +1,90 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "FLD-01",
+        "zone": "Vrishabhavathi Lowland Ward",
+        "area_ha": 428.5,
+        "confidence": 0.91,
+        "validated": false,
+        "status_label": "Model prediction (unvalidated)"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [77.468, 12.898], [77.495, 12.897], [77.503, 12.914], [77.486, 12.922], [77.466, 12.915], [77.468, 12.898]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "FLD-02",
+        "zone": "Bellandur-Varthur Spillway Zone",
+        "area_ha": 512.0,
+        "confidence": 0.94,
+        "validated": false,
+        "status_label": "Model prediction (unvalidated)"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [77.652, 12.926], [77.694, 12.927], [77.752, 12.936], [77.749, 12.952], [77.685, 12.948], [77.651, 12.942], [77.652, 12.926]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "FLD-03",
+        "zone": "Arkavathi Floodplain Corridor",
+        "area_ha": 486.2,
+        "confidence": 0.87,
+        "validated": false,
+        "status_label": "Model prediction (unvalidated)"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [77.448, 13.142], [77.479, 13.140], [77.488, 13.168], [77.462, 13.175], [77.444, 13.160], [77.448, 13.142]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "FLD-04",
+        "zone": "Hebbal-Nagavara Basin",
+        "area_ha": 245.9,
+        "confidence": 0.85,
+        "validated": false,
+        "status_label": "Model prediction (unvalidated)"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [77.586, 13.038], [77.614, 13.039], [77.618, 13.054], [77.592, 13.056], [77.583, 13.046], [77.586, 13.038]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "FLD-05",
+        "zone": "Byramangala Downstream",
+        "area_ha": 170.0,
+        "confidence": 0.81,
+        "validated": false,
+        "status_label": "Model prediction (unvalidated)"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [77.405, 12.779], [77.432, 12.780], [77.436, 12.797], [77.410, 12.798], [77.405, 12.779]
+        ]]
+      }
+    }
+  ]
+}

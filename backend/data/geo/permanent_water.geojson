@@ -1,0 +1,45 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "name": "Bellandur Lake (JRC Permanent Water)", "source": "jrc-gsw" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [77.659, 12.931], [77.678, 12.932], [77.680, 12.941], [77.661, 12.940], [77.659, 12.931]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Varthur Lake (JRC Permanent Water)", "source": "jrc-gsw" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [77.732, 12.938], [77.747, 12.939], [77.748, 12.947], [77.734, 12.946], [77.732, 12.938]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Hessarghatta Reservoir (JRC Permanent Water)", "source": "jrc-gsw" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [77.480, 13.135], [77.502, 13.136], [77.504, 13.149], [77.482, 13.148], [77.480, 13.135]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Hebbal Lake (JRC Permanent Water)", "source": "jrc-gsw" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [77.584, 13.043], [77.596, 13.043], [77.597, 13.050], [77.585, 13.050], [77.584, 13.043]
+        ]]
+      }
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "CHG-01",
+        "name": "Bidadi-Ramanagara Laterite Ridge",
+        "taluk": "Ramanagara",
+        "area_ha": 46.8,
+        "ndvi_drop": -0.44,
+        "bare_soil_index_delta": 0.31,
+        "confidence": 0.89,
+        "near_river": true,
+        "river_distance_m": 140,
+        "label": "Potential suspicious activity: requires official verification"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [77.376, 12.801], [77.388, 12.800], [77.390, 12.810], [77.377, 12.811], [77.376, 12.801]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "CHG-02",
+        "name": "Doddaballapur Arkavathi Bank",
+        "taluk": "Doddaballapur",
+        "area_ha": 34.2,
+        "ndvi_drop": -0.39,
+        "bare_soil_index_delta": 0.28,
+        "confidence": 0.84,
+        "near_river": true,
+        "river_distance_m": 85,
+        "label": "Potential suspicious activity: requires official verification"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [77.537, 13.261], [77.547, 13.261], [77.548, 13.269], [77.536, 13.269], [77.537, 13.261]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "CHG-03",
+        "name": "Devanahalli Eastern Scrub Sector",
+        "taluk": "Devanahalli",
+        "area_ha": 29.5,
+        "ndvi_drop": -0.35,
+        "bare_soil_index_delta": 0.24,
+        "confidence": 0.78,
+        "near_river": false,
+        "river_distance_m": 820,
+        "label": "Potential suspicious activity: requires official verification"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [77.716, 13.231], [77.726, 13.231], [77.727, 13.239], [77.715, 13.239], [77.716, 13.231]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "CHG-04",
+        "name": "Kanakapura Tributary Terrace",
+        "taluk": "Bengaluru South",
+        "area_ha": 22.1,
+        "ndvi_drop": -0.32,
+        "bare_soil_index_delta": 0.21,
+        "confidence": 0.74,
+        "near_river": true,
+        "river_distance_m": 195,
+        "label": "Potential suspicious activity: requires official verification"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [77.508, 12.764], [77.516, 12.764], [77.517, 12.772], [77.507, 12.772], [77.508, 12.764]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "CHG-05",
+        "name": "Hoskote Outer Buffer Parcel",
+        "taluk": "Hoskote",
+        "area_ha": 15.8,
+        "ndvi_drop": -0.29,
+        "bare_soil_index_delta": 0.19,
+        "confidence": 0.68,
+        "near_river": false,
+        "river_distance_m": 1150,
+        "label": "Potential suspicious activity: requires official verification"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [77.791, 13.068], [77.799, 13.068], [77.800, 13.076], [77.790, 13.076], [77.791, 13.068]
+        ]]
+      }
+    }
+  ]
+}

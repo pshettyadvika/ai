@@ -1,0 +1,263 @@
+{
+  "sample": true,
+  "generated_at": "2026-11-25T06:30:00Z",
+  "region": "Bengaluru & Peri-Urban Karnataka Basin",
+  "aoi_bbox": [77.3, 12.7, 77.9, 13.3],
+  "model": {
+    "architecture": "U-Net (ResNet-34 encoder, 2-channel S1 VV+VH)",
+    "training_dataset": "Sen1Floods11 v1.1 (hand-labeled 446 chips)",
+    "citation": "Bonafilia et al., 2020, CVPR Workshops",
+    "test_iou": 0.714,
+    "test_f1": 0.833,
+    "bolivia_iou": 0.642,
+    "bolivia_f1": 0.782,
+    "baseline_test_iou": 0.538,
+    "baseline_test_f1": 0.699,
+    "baseline_bolivia_iou": 0.461,
+    "baseline_bolivia_f1": 0.631,
+    "karnataka_validated": false,
+    "karnataka_status_label": "Model prediction (unvalidated)"
+  },
+  "flood": {
+    "validated": false,
+    "status_label": "Model prediction (unvalidated)",
+    "acquisition_window": "2026-10-01 to 2026-11-25",
+    "flooded_area_ha": 1842.6,
+    "permanent_water_masked_ha": 914.3,
+    "cropland_affected_ha": 612.4,
+    "built_up_affected_ha": 248.5,
+    "roads_affected_km": 38.7,
+    "buildings_affected_count": 412,
+    "critical_infrastructure_count": 14,
+    "prioritized_settlements": [
+      {
+        "id": "STL-01",
+        "name": "Vrishabhavathi Lowland Ward",
+        "taluk": "Bengaluru South",
+        "flooded_ha": 428.5,
+        "buildings_at_risk": 146,
+        "roads_km": 11.4,
+        "priority": "High",
+        "lat": 12.907,
+        "lon": 77.484
+      },
+      {
+        "id": "STL-02",
+        "name": "Bellandur-Varthur Spillway Zone",
+        "taluk": "Bengaluru East",
+        "flooded_ha": 512.0,
+        "buildings_at_risk": 118,
+        "roads_km": 9.8,
+        "priority": "High",
+        "lat": 12.937,
+        "lon": 77.668
+      },
+      {
+        "id": "STL-03",
+        "name": "Arkavathi Floodplain Corridor",
+        "taluk": "Nelamangala",
+        "flooded_ha": 486.2,
+        "buildings_at_risk": 62,
+        "roads_km": 8.6,
+        "priority": "Medium",
+        "lat": 13.155,
+        "lon": 77.465
+      },
+      {
+        "id": "STL-04",
+        "name": "Hebbal-Nagavara Basin",
+        "taluk": "Bengaluru North",
+        "flooded_ha": 245.9,
+        "buildings_at_risk": 54,
+        "roads_km": 5.3,
+        "priority": "Medium",
+        "lat": 13.045,
+        "lon": 77.599
+      },
+      {
+        "id": "STL-05",
+        "name": "Byramangala Downstream",
+        "taluk": "Bidadi / Ramanagara",
+        "flooded_ha": 170.0,
+        "buildings_at_risk": 32,
+        "roads_km": 3.6,
+        "priority": "Watch",
+        "lat": 12.788,
+        "lon": 77.418
+      }
+    ],
+    "critical_infrastructure": [
+      {
+        "id": "INF-01",
+        "name": "Kengeri 220kV Substation",
+        "type": "substation",
+        "distance_to_flood_m": 45,
+        "status": "Exposed",
+        "lat": 12.905,
+        "lon": 77.482
+      },
+      {
+        "id": "INF-02",
+        "name": "Rajarajeshwari Medical Center",
+        "type": "hospital",
+        "distance_to_flood_m": 110,
+        "status": "Adjacent",
+        "lat": 12.898,
+        "lon": 77.461
+      },
+      {
+        "id": "INF-03",
+        "name": "Bellandur Kodi Bridge",
+        "type": "bridge",
+        "distance_to_flood_m": 0,
+        "status": "Inundated approach",
+        "lat": 12.936,
+        "lon": 77.674
+      },
+      {
+        "id": "INF-04",
+        "name": "Varthur Lake Causeway",
+        "type": "bridge",
+        "distance_to_flood_m": 15,
+        "status": "Exposed",
+        "lat": 12.941,
+        "lon": 77.742
+      },
+      {
+        "id": "INF-05",
+        "name": "Peenya West Feeder Station",
+        "type": "substation",
+        "distance_to_flood_m": 180,
+        "status": "Watch",
+        "lat": 13.028,
+        "lon": 77.519
+      },
+      {
+        "id": "INF-06",
+        "name": "Yelahanka Community Hospital",
+        "type": "hospital",
+        "distance_to_flood_m": 240,
+        "status": "Watch",
+        "lat": 13.098,
+        "lon": 77.596
+      }
+    ]
+  },
+  "change": {
+    "baseline_window": "2025-11-01 to 2025-12-15",
+    "current_window": "2026-10-01 to 2026-11-25",
+    "total_flagged_ha": 148.4,
+    "flagged_sites_count": 5,
+    "river_proximity_sites_count": 3,
+    "mandatory_label": "Potential suspicious activity: requires official verification",
+    "sites": [
+      {
+        "id": "CHG-01",
+        "name": "Bidadi-Ramanagara Laterite Ridge",
+        "taluk": "Ramanagara",
+        "area_ha": 46.8,
+        "ndvi_drop": -0.44,
+        "bare_soil_index_delta": 0.31,
+        "confidence": 0.89,
+        "near_river": true,
+        "river_distance_m": 140,
+        "land_cover_prior": "Shrubland / Agriculture",
+        "label": "Potential suspicious activity: requires official verification",
+        "lat": 12.805,
+        "lon": 77.382
+      },
+      {
+        "id": "CHG-02",
+        "name": "Doddaballapur Arkavathi Bank",
+        "taluk": "Doddaballapur",
+        "area_ha": 34.2,
+        "ndvi_drop": -0.39,
+        "bare_soil_index_delta": 0.28,
+        "confidence": 0.84,
+        "near_river": true,
+        "river_distance_m": 85,
+        "land_cover_prior": "Tree cover / Riparian buffer",
+        "label": "Potential suspicious activity: requires official verification",
+        "lat": 13.265,
+        "lon": 77.542
+      },
+      {
+        "id": "CHG-03",
+        "name": "Devanahalli Eastern Scrub Sector",
+        "taluk": "Devanahalli",
+        "area_ha": 29.5,
+        "ndvi_drop": -0.35,
+        "bare_soil_index_delta": 0.24,
+        "confidence": 0.78,
+        "near_river": false,
+        "river_distance_m": 820,
+        "land_cover_prior": "Grassland / Scrub",
+        "label": "Potential suspicious activity: requires official verification",
+        "lat": 13.235,
+        "lon": 77.721
+      },
+      {
+        "id": "CHG-04",
+        "name": "Kanakapura Tributary Terrace",
+        "taluk": "Bengaluru South",
+        "area_ha": 22.1,
+        "ndvi_drop": -0.32,
+        "bare_soil_index_delta": 0.21,
+        "confidence": 0.74,
+        "near_river": true,
+        "river_distance_m": 195,
+        "land_cover_prior": "Cropland / Scrub",
+        "label": "Potential suspicious activity: requires official verification",
+        "lat": 12.768,
+        "lon": 77.512
+      },
+      {
+        "id": "CHG-05",
+        "name": "Hoskote Outer Buffer Parcel",
+        "taluk": "Hoskote",
+        "area_ha": 15.8,
+        "ndvi_drop": -0.29,
+        "bare_soil_index_delta": 0.19,
+        "confidence": 0.68,
+        "near_river": false,
+        "river_distance_m": 1150,
+        "land_cover_prior": "Sparse vegetation",
+        "label": "Potential suspicious activity: requires official verification",
+        "lat": 13.072,
+        "lon": 77.795
+      }
+    ]
+  },
+  "economics": {
+    "loss_per_ha_inr": 45000,
+    "assessment_time_manual_days": 14,
+    "assessment_time_geoterra_hours": 2.5,
+    "total_loss_inr": 27558000,
+    "time_saved_hours": 333.5,
+    "open_data_cost_inr": 0,
+    "note": "All economic parameters are configurable planning assumptions."
+  },
+  "onboard_sim": {
+    "simulation": true,
+    "raw_scene_size_mb": 940.0,
+    "insight_packet_size_kb": 1.65,
+    "downlink_rate_mbps": 12.0,
+    "haps_altitude_km": 20.0,
+    "drone_endurance_min": 45,
+    "compression_ratio": 583369.7,
+    "downlink_time_raw_sec": 626.67,
+    "downlink_time_packet_sec": 0.0011,
+    "sample_packet": {
+      "packet_id": "GT-PKT-20261125-KA01",
+      "tile_id": "S1A_IW_GRDH_BLR_042",
+      "flood_ha": 1842.6,
+      "change_ha": 148.4,
+      "priority_centroids": [
+        [12.907, 77.484],
+        [12.937, 77.668],
+        [12.805, 77.382]
+      ],
+      "model_version": "unet-r34-sen1floods11-v1"
+    }
+  }
+}

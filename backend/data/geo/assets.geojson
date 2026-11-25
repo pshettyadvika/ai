@@ -1,0 +1,97 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "category": "road", "name": "Mysuru Road Kengeri Corridor", "length_km": 4.2 },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[77.465, 12.895], [77.482, 12.905], [77.499, 12.918]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "category": "road", "name": "Outer Ring Road Bellandur Segment", "length_km": 5.1 },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[77.648, 12.927], [77.674, 12.936], [77.698, 12.944]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "category": "road", "name": "Varthur Main Causeway Road", "length_km": 3.4 },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[77.724, 12.936], [77.742, 12.941], [77.758, 12.946]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "category": "road", "name": "Nelamangala-Hessarghatta Link", "length_km": 4.8 },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[77.446, 13.144], [77.465, 13.155], [77.484, 13.166]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "category": "building_cluster", "name": "Vrishabhavathi Lowland Cluster (146 buildings)", "count": 146 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [77.476, 12.904], [77.488, 12.904], [77.488, 12.912], [77.476, 12.912], [77.476, 12.904]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "category": "building_cluster", "name": "Bellandur South Fringe (118 buildings)", "count": 118 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [77.660, 12.926], [77.676, 12.926], [77.676, 12.931], [77.660, 12.931], [77.660, 12.926]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "category": "building_cluster", "name": "Hebbal-Nagavara Fringe (54 buildings)", "count": 54 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [77.596, 13.040], [77.608, 13.040], [77.608, 13.047], [77.596, 13.047], [77.596, 13.040]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "category": "infrastructure", "infra_type": "substation", "id": "INF-01", "name": "Kengeri 220kV Substation", "status": "Exposed", "distance_m": 45 },
+      "geometry": { "type": "Point", "coordinates": [77.482, 12.905] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "category": "infrastructure", "infra_type": "hospital", "id": "INF-02", "name": "Rajarajeshwari Medical Center", "status": "Adjacent", "distance_m": 110 },
+      "geometry": { "type": "Point", "coordinates": [77.461, 12.898] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "category": "infrastructure", "infra_type": "bridge", "id": "INF-03", "name": "Bellandur Kodi Bridge", "status": "Inundated approach", "distance_m": 0 },
+      "geometry": { "type": "Point", "coordinates": [77.674, 12.936] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "category": "infrastructure", "infra_type": "bridge", "id": "INF-04", "name": "Varthur Lake Causeway", "status": "Exposed", "distance_m": 15 },
+      "geometry": { "type": "Point", "coordinates": [77.742, 12.941] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "category": "infrastructure", "infra_type": "substation", "id": "INF-05", "name": "Peenya West Feeder Station", "status": "Watch", "distance_m": 180 },
+      "geometry": { "type": "Point", "coordinates": [77.519, 13.028] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "category": "infrastructure", "infra_type": "hospital", "id": "INF-06", "name": "Yelahanka Community Hospital", "status": "Watch", "distance_m": 240 },
+      "geometry": { "type": "Point", "coordinates": [77.596, 13.098] }
+    }
+  ]
+}

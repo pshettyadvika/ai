@@ -1,0 +1,73 @@
+{
+  "sample": true,
+  "model_name": "GeoTerra-FloodSAR-UNet-ResNet34",
+  "architecture": "segmentation_models_pytorch.Unet(encoder_name='resnet34', encoder_weights='imagenet', in_channels=2, classes=1)",
+  "input_channels": ["Sentinel-1 VV (dB, clipped -30 to +5, train-normalized)", "Sentinel-1 VH (dB, clipped -30 to +5, train-normalized)"],
+  "loss_function": "0.5 * MaskedBCEWithLogitsLoss + 0.5 * MaskedDiceLoss (ignoring -1 no-data pixels)",
+  "dataset": {
+    "name": "Sen1Floods11 v1.1 Hand-Labeled Subset",
+    "chips_total": 446,
+    "chip_size": "512x512",
+    "crs": "EPSG:4326",
+    "citation": "Bonafilia, D., Tellman, B., Anderson, T., & Issenberg, E. (2020). Sen1Floods11: A georeferenced dataset to train and test deep learning flood algorithms for Sentinel-1. CVPR Workshops.",
+    "splits": {
+      "train": 252,
+      "valid": 89,
+      "test": 90,
+      "bolivia_holdout": 15
+    }
+  },
+  "baseline": {
+    "name": "Otsu/Tuned VH Backscatter Threshold",
+    "tuned_threshold_vh_db": -16.5,
+    "tuned_on": "validation split only"
+  },
+  "metrics": {
+    "validation": {
+      "unet_iou": 0.728,
+      "unet_f1": 0.843,
+      "unet_precision": 0.856,
+      "unet_recall": 0.830,
+      "baseline_iou": 0.551,
+      "baseline_f1": 0.711
+    },
+    "test": {
+      "unet_iou": 0.714,
+      "unet_f1": 0.833,
+      "unet_precision": 0.841,
+      "unet_recall": 0.825,
+      "baseline_iou": 0.538,
+      "baseline_f1": 0.699,
+      "confusion_matrix": {
+        "tn": 18421500,
+        "fp": 389400,
+        "fn": 438100,
+        "tp": 2064200
+      }
+    },
+    "bolivia_holdout": {
+      "unet_iou": 0.642,
+      "unet_f1": 0.782,
+      "unet_precision": 0.804,
+      "unet_recall": 0.761,
+      "baseline_iou": 0.461,
+      "baseline_f1": 0.631,
+      "confusion_matrix": {
+        "tn": 3124500,
+        "fp": 91200,
+        "fn": 116400,
+        "tp": 374900
+      }
+    },
+    "karnataka_inference": {
+      "validated": false,
+      "note": "No ground-truth flood labels exist for this Karnataka window. Metrics are intentionally omitted; outputs are labeled 'Model prediction (unvalidated)'."
+    }
+  },
+  "limitations": [
+    "Urban double-bounce radar reflections from dense Bengaluru buildings can mask street-level water.",
+    "Terrain radar shadow in steep Western Ghats or quarry walls can resemble dark specular water.",
+    "Domain shift between Sen1Floods11 GRD scenes and Planetary Computer Sentinel-1 RTC scenes requires dB calibration alignment.",
+    "Heavy canopy vegetation attenuates C-band SAR penetration under flooded tree cover."
+  ]
+}

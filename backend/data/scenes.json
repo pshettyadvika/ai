@@ -1,0 +1,77 @@
+{
+  "sample": true,
+  "stac_endpoint": "https://planetarycomputer.microsoft.com/api/stac/v1",
+  "aoi": "Bengaluru & Peri-Urban Basin [77.3, 12.7, 77.9, 13.3]",
+  "scenes": [
+    {
+      "id": "S1A_IW_GRDH_1SDV_20261122T003912_RTC",
+      "collection": "sentinel-1-rtc",
+      "datetime": "2026-11-22T00:39:12Z",
+      "orbit_state": "descending",
+      "relative_orbit": 92,
+      "polarization": "VV, VH",
+      "cloud_cover_pct": null,
+      "role": "Post-monsoon flood inference"
+    },
+    {
+      "id": "S1A_IW_GRDH_1SDV_20261110T003911_RTC",
+      "collection": "sentinel-1-rtc",
+      "datetime": "2026-11-10T00:39:11Z",
+      "orbit_state": "descending",
+      "relative_orbit": 92,
+      "polarization": "VV, VH",
+      "cloud_cover_pct": null,
+      "role": "Flood progression check"
+    },
+    {
+      "id": "S1A_IW_GRDH_1SDV_20261005T003909_RTC",
+      "collection": "sentinel-1-rtc",
+      "datetime": "2026-10-05T00:39:09Z",
+      "orbit_state": "descending",
+      "relative_orbit": 92,
+      "polarization": "VV, VH",
+      "cloud_cover_pct": null,
+      "role": "Pre-peak SAR reference"
+    },
+    {
+      "id": "S2B_MSIL2A_20261118T050949_T43PGQ",
+      "collection": "sentinel-2-l2a",
+      "datetime": "2026-11-18T05:09:49Z",
+      "orbit_state": "descending",
+      "relative_orbit": 62,
+      "polarization": "Optical 10m (SCL masked)",
+      "cloud_cover_pct": 6.4,
+      "role": "Current land-change composite"
+    },
+    {
+      "id": "S2A_MSIL2A_20251128T051121_T43PGQ",
+      "collection": "sentinel-2-l2a",
+      "datetime": "2025-11-28T05:11:21Z",
+      "orbit_state": "descending",
+      "relative_orbit": 62,
+      "polarization": "Optical 10m (SCL masked)",
+      "cloud_cover_pct": 4.1,
+      "role": "Baseline land-change reference"
+    },
+    {
+      "id": "JRC_GSW1_4_GlobalSurfaceWater_BLR",
+      "collection": "jrc-gsw",
+      "datetime": "2021-12-31T00:00:00Z",
+      "orbit_state": "static",
+      "relative_orbit": 0,
+      "polarization": "Occurrence mask",
+      "cloud_cover_pct": null,
+      "role": "Permanent water exclusion"
+    },
+    {
+      "id": "ESA_WorldCover_10m_2021_v200_N12E077",
+      "collection": "esa-worldcover",
+      "datetime": "2021-12-31T00:00:00Z",
+      "orbit_state": "static",
+      "relative_orbit": 0,
+      "polarization": "11-class land cover",
+      "cloud_cover_pct": null,
+      "role": "Cropland & built-up intersection"
+    }
+  ]
+}

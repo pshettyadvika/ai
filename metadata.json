@@ -1,0 +1,6 @@
+{
+  "name": "GeoTerra AI",
+  "description": "Orbit to Economy: Protective satellite radar flood mapping, land-change monitoring, and disaster resilience intelligence for Karnataka.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

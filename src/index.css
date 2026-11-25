@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #07090E;
+    color: #F1F5F9;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.maplibregl-map {
+  background: #07090E !important;
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+}
+
+.maplibregl-popup-content {
+  background: #0F172A !important;
+  color: #F1F5F9 !important;
+  border: 1px solid #1E293B;
+  border-radius: 8px !important;
+  padding: 10px 12px !important;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.55) !important;
+}
+
+.maplibregl-popup-tip {
+  border-top-color: #0F172A !important;
+  border-bottom-color: #0F172A !important;
+}
+
+.maplibregl-popup-close-button {
+  color: #94A3B8 !important;
+  padding: 2px 6px !important;
+}
+
+.maplibregl-ctrl-group {
+  background: #0F1420 !important;
+  border: 1px solid #1E293B !important;
+}
+
+.maplibregl-ctrl-group button {
+  background-color: transparent !important;
+  color: #E2E8F0 !important;
+}
+
+.maplibregl-ctrl-group button + button {
+  border-top: 1px solid #1E293B !important;
+}
+
+.maplibregl-ctrl-icon {
+  filter: invert(0.9);
+}
+
+.maplibregl-ctrl-attrib {
+  background: rgba(7, 9, 14, 0.8) !important;
+  color: #94A3B8 !important;
+  font-size: 10px !important;
+}
+
+.maplibregl-ctrl-attrib a {
+  color: #38BDF8 !important;
+}
